@@ -1,0 +1,333 @@
+/**
+ * @name Pesterchum Classic Theme
+ * @author FlaringK
+ * @version 1.0.0
+ * @description Highly customizable theme for BetterDiscord.
+ * @source https://github.com/FlaringK/BD-pesterchum-classic-theme
+ * @website https://flaringk.github.io
+ */
+
+
+.theme-dark,
+.theme-light {
+    --font-code: courier_prime, "Courier New", Courier, monospace;
+
+    --interactive-active: #D5B975;
+    --interactive-hover: #EDDBB1;
+    --interactive-normal: #fff;
+
+    --channel-icon: var(--interactive-normal);
+
+    --p-primary: #FDB302;
+    --p-secondary: #C48A00;
+    --p-teriary: #FFF700;
+    --p-black: black;
+    --p-white: white;
+
+    --font-display: 'Courier New', Courier, monospace;
+
+    
+    --__header-bar-background: var(--p-secondary);
+    --background-primary: var(--p-primary);
+    --background-secondary: var(--p-secondary);
+    --background-tertiary: var(--p-black);
+    --header-secondary: var(--p-black);
+    --text-normal: var(--p-secondary);
+    --activity-card-background: var(--p-secondary);
+}
+
+/* PESTERCHUM WINODW */
+
+.chat-2ZfjoI {
+
+    border: solid var(--p-teriary);
+    background-color: var(--p-primary);
+}
+
+.chat-2ZfjoI section {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    --bg-overlay-2: var(--p-secondary);
+    color: var(--interactive-normal);
+    background-color: var(--bg-overlay-2,var(--__header-bar-background)) !important;
+    --header-secondary: var(--p-white);
+}
+
+.chat-2ZfjoI section div::after {
+    content: none;
+}
+
+.chat-2ZfjoI section h1::before { content: "::\00a0" }
+.chat-2ZfjoI section h1::after { content: "\00a0::" }
+
+.chat-2ZfjoI > div:last-child {
+    margin: .5em;
+    margin-top: 1.75em;
+    position: relative;
+}
+
+.chat-2ZfjoI > div:last-child::before {
+    content: "PESTERLOG:";
+    font-size: .65em;
+    font-weight: 400;
+    font-family: FONTSTUCK;
+    top: -1.6em;
+    box-shadow: none;
+}
+
+.chat-2ZfjoI > div:last-child > main {
+    border: solid var(--p-secondary);
+    --background-primary: var(--p-white);
+}
+
+.chat-2ZfjoI > div:last-child > div {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    --channels-default: var(--p-white);
+    --bg-overlay-chat: transprent;
+    position: relative;
+}
+
+.members-3WRCEx {
+    margin-bottom: 58.5px;
+    background-color: var(--p-secondary);;
+}
+
+.chat-2ZfjoI form {
+    background-color: var(--p-primary);
+    margin: 0 -2.5px -25px -2.5px;
+    border-top: solid var(--p-secondary);
+    padding: .5em 0 0;
+
+    --text-normal: var(--p-black);
+    --interactive-normal: var(--p-primary);
+}
+.chat-2ZfjoI form::before {  content: none; }
+
+.chat-2ZfjoI form > div > div {
+    background-color: var(--p-white);
+    border-radius: 0;
+    border: solid var(--p-secondary);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chat-2ZfjoI form button * {
+    --interactive-normal: var(--p-primary);
+}
+
+.chat-2ZfjoI form * {
+    --background-secondary: var(--p-primary);
+    border-radius: 0;
+    --header-secondary: var(--p-white);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* PESTERCHUM CHAT */
+
+.chat-2ZfjoI ol {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+
+    --text-normal: var(--p-black);
+    --background-secondary: var(--p-primary);
+    --interactive-normal: var(--p-primary);
+    --mention-foreground: var(--p-primary);
+    --mention-background: var(--p-teriary);
+    --header-primary: var(--p-primary);
+    --bg-overlay-3: white;
+}
+
+.chat-2ZfjoI ol article {
+    --header-primary: var(--p-black);
+    --interactive-normal: var(--p-secondary);
+}
+
+.chat-2ZfjoI ol > div:last-child {
+    height: 6px;
+}
+
+.chat-2ZfjoI ol li > div {
+    padding-left: 16px !important;
+}
+
+.chat-2ZfjoI ol li > div > div {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-indent: 0 !important;
+}
+
+.chat-2ZfjoI ol li h3 * {
+    font-weight: 600;
+    white-space: normal;
+}
+.chat-2ZfjoI ol li h3 > span:first-child { 
+    font-size: 1rem;
+    opacity: 1;
+    width: max-content;
+}
+.chat-2ZfjoI ol li h3 time::before {  content: "["}
+.chat-2ZfjoI ol li h3 time::after {  content: "]"}
+.chat-2ZfjoI ol li h3 > span:last-child { 
+    text-transform: uppercase; 
+    display: inline-block;
+}
+.chat-2ZfjoI ol li h3 > span:last-child > .username-h_Y3Us:not(span[type="system_tag"])::after {
+    content: ":";
+}
+span[type="system_tag"] { display: none; }
+span[type="member_name"]::after {
+    margin-left: -.6em;
+    width: .1em;
+}
+
+.wrapper-1ZcZW- { font-weight: 600; } 
+.reactionCount-26U4As { color: black }
+
+.chat-2ZfjoI div[class^="typing"] {
+    bottom: 60px;
+    left: 0;
+}
+
+.chat-2ZfjoI div[class^="replyBadge"] {
+    z-index: 1;
+}
+
+.chat-2ZfjoI *[class^="codeLine"] {
+    --header-secondary: var(--p-black);
+}
+
+.chat-2ZfjoI code {
+    background-color: #eee;
+    border: 1px dashed gray;
+    border-radius: 0;
+}
+
+/* PESTERCHUM CLIENT */
+
+.sidebar-1tnWFu {
+    border: solid var(--p-teriary);
+    --background-secondary: var(--p-primary);
+    border-top-left-radius: 0 !important;
+    --background-modifier-active: var(--p-primary);
+    --background-secondary-alt: var(--p-primary);
+    --elevation-low: none;
+    
+    --background-tertiary: var(--p-white);
+    --header-secondary: var(--p-white);
+    --text-normal: var(--p-white);
+}
+
+.sidebar-1tnWFu::before {
+    content: "PESTERCHUM 6.0";
+    letter-spacing: -1px;
+    display: block;
+    font-family: FONTSTUCK;
+    color: var(--p-white);
+    text-align: center;
+    font-size: 1.15em;
+    margin-top: 1.5em;
+    z-index: 5;
+}
+
+.sidebar-1tnWFu > nav > div:first-child > header {
+    border: solid var(--p-teriary);
+    margin: .25em;
+    background-color: var(--p-black);
+    margin-right: -.2em;
+}
+
+.sidebar-1tnWFu > nav > div:first-child img {
+    display: none;
+    background-color: var(--p-primary);
+}
+
+.sidebar-1tnWFu > nav > div:first-child *::before {
+    content: none;
+}
+
+.sidebar-1tnWFu > nav > div:first-child::after {
+    content: "SERVERROLL:";
+    letter-spacing: -1px;
+    display: block;
+    font-family: FONTSTUCK;
+    color: var(--p-black);
+    margin: 1em 0 0 .8em;
+    font-size: .6em;
+    background-color: var(--p-primary);
+    z-index: 5;
+    position: relative;
+}
+
+.sidebar-1tnWFu > nav > div[class^="searchBar"]::after {
+    content: "CHUMROLL:";
+    margin: .6em 0 0 .8em;
+}
+
+.sidebar-1tnWFu #channels {
+    border: solid var(--p-teriary);
+    margin: .25em;
+    background-color: var(--p-black);
+}
+
+.sidebar-1tnWFu #channels div[style="height: 84px;"] {
+    display: none;
+}
+
+.sidebar-1tnWFu > section::before {
+    content: "MY CHUMHANDLE:";
+    letter-spacing: -1px;
+    display: block;
+    font-family: FONTSTUCK;
+    color: var(--p-black);
+    margin: .6em 0 0 .8em;
+    font-size: .6em;
+    background-color: var(--p-primary);
+}
+
+.sidebar-1tnWFu > section > div:last-child {
+    border: solid var(--p-teriary);
+    margin: .25em;
+    background-color: var(--p-black);
+}
+
+.sidebar-1tnWFu > section > div:last-child > div:first-child {
+    margin-right: 0;
+}
+
+.sidebar-1tnWFu > nav > div:first-child {
+    display: block;
+    padding: 0 7px 0 0;
+    height: unset;
+}
+
+.sidebar-1tnWFu > nav > div:first-child button {
+    border: solid var(--p-teriary);
+    margin: .25em;
+    background-color: var(--p-black);
+    border-radius: 0;
+    padding: .9em 1em;
+    height: unset;
+}
+
+.sidebar-1tnWFu > nav > div[class^="searchBar"] + div {
+    border: solid var(--p-teriary);
+    margin: .25em;
+    background-color: var(--p-black);
+}
+
+/* TOP BAR */
+
+#app-mount > div:nth-of-type(2) {
+    position: absolute;
+
+    width: 240px;
+    left: 74.5px;
+    background-color: var(--p-primary);
+    border-radius: 5px;
+    padding-top: 1px;
+}
+
+#app-mount > div:nth-of-type(2) > div:first-child {
+    padding: 0 0 0 5px;
+    --text-muted: var(--p-white);
+}
